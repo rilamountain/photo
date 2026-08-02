@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Guardians of the Moonlit Vines — A Rila's Tale</title>
+<meta name="description" content="An interactive map and lore companion to Guardians of the Moonlit Vines, a novel of Bulgaria's Rila Mountains by Momtchil Dimitrov.">
+<link rel="stylesheet" href="assets/vendor/leaflet/leaflet.css">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-nav">
+  <div class="wrap">
+    <a class="brand" href="#top">Moonlit <strong>Vines</strong></a>
+    <nav>
+      <a href="#about">The Book</a>
+      <a href="#map">Map</a>
+      <a href="#locations">Locations</a>
+      <a href="#glossary">Glossary</a>
+    </nav>
+  </div>
+</header>
+
+<div id="top"></div>
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-text">
+      <p class="kicker">A Rila's Tale</p>
+      <h1>Guardians of the <em>Moonlit Vines</em></h1>
+      <p class="subtitle">A novel of hidden valleys, old faith, and a mountain that remembers.</p>
+      <p class="lede">Beginning in the spring of 1938 in Bulgaria's Rila Mountains, a monk and a village girl follow whispers of a vine that drinks moonlight — and the guardianship it demands of everyone who finds it.</p>
+      <p class="byline">Written by <strong>Momtchil Dimitrov</strong> · First edition, 2026</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#map">Explore the map</a>
+        <a class="btn btn-ghost" href="#locations">Read the locations</a>
+      </div>
+    </div>
+    <div class="hero-cover">
+      <img src="assets/img/cover.png" alt="Book cover art: a stone rampart overlooking the Rila peaks at dusk, a carved map resting on the wall">
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<section id="about">
+  <div class="wrap">
+    <div class="about-grid">
+      <div>
+        <p class="kicker">The Book</p>
+        <h2 style="font-family:var(--serif); font-size:clamp(1.7rem,4vw,2.4rem); margin:0 0 1rem;">Rila as more than a setting</h2>
+        <p>Rila — Bulgaria's mightiest mountain range, crowned with glacial lakes and blanketed in forests so vast they swallow sound — has shaped the author's family for generations of vineyard keepers and wine lovers.</p>
+        <p>Woven from fact and legend, the story follows Father Atanas, a monk-scholar who breaks fifteen years of vows to chase a name found scribbled in the monastery archives — <em>лоза от Дри́скѫ</em>, "the vine from Driska" — and Kalina, the village girl whose sight sees past beauty to what a place is truly guarding.</p>
+      </div>
+      <blockquote>
+        "The following pages, which begin in the spring of 1938, weave a mix of fact and fiction, myth and reality — a tale as timeless as the mountains themselves."
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<section id="map">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="kicker">Walk the Story</p>
+      <h2>The Real Rila, Mapped to the Tale</h2>
+      <p>Every pin below is a real place in Bulgaria's Rila Mountains that appears in the novel — plus one that isn't on any map at all. Click a pin, or browse the cards further down.</p>
+    </div>
+    <div id="leaflet-map"></div>
+    <div class="map-legend">
+      <span><i class="dot dot-real"></i> Real, visitable location</span>
+      <span><i class="dot dot-legend"></i> Legendary — Driska Valley</span>
+    </div>
+  </div>
+</section>
+
+<section id="locations">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="kicker">Locations</p>
+      <h2>From the Monastery to the Hidden Valley</h2>
+      <p>Real-world context alongside the story's own words. Have your own photos from these places? Drop a <code>.jpg</code> into <code>assets/photos/</code> named after the location (see file names in page source) and it will appear here automatically.</p>
+    </div>
+    <div class="loc-grid" id="loc-grid"></div>
+  </div>
+</section>
+
+<section id="glossary">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="kicker">Glossary</p>
+      <h2>Terms &amp; Guardians</h2>
+      <p>The people, powers, and pacts that hold the story together.</p>
+    </div>
+    <dl class="glossary-grid" id="glossary-grid"></dl>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div><strong>Guardians of the Moonlit Vines</strong> — A Rila's Tale, by Momtchil Dimitrov</div>
+    <div>© 2026. A work of fiction inspired by real places, history, and legend.</div>
+  </div>
+</footer>
+
+<script src="assets/vendor/leaflet/leaflet.js"></script>
+<script src="assets/js/map-data.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
